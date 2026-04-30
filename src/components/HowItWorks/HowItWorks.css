@@ -1,0 +1,131 @@
+.how-it-works-section {
+  width: 100%;
+  background-color: #faf9f6;
+  font-family: 'Inter', sans-serif;
+  padding: 6rem 1rem;
+}
+
+.how-it-works-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header */
+.hiw-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.hiw-kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.hiw-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Grid */
+.hiw-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Cards */
+.hiw-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f3f4f6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hiw-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Step Number Badge */
+.step-number {
+  position: absolute;
+  top: -12px;
+  left: 2.5rem;
+  background-color: #111827;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #faf9f6;
+}
+
+/* Icon */
+.hiw-icon-bg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #ecfdf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Content */
+.hiw-content h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.hiw-content p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hiw-grid {
+    gap: 1.5rem;
+  }
+  
+  .hiw-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .step-number {
+    left: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hiw-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .hiw-title {
+    font-size: 2.5rem;
+  }
+}

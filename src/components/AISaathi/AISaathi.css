@@ -1,0 +1,125 @@
+.ai-saathi-section {
+  width: 100%;
+  background-color: #faf9f6;
+  font-family: 'Inter', sans-serif;
+  padding: 5rem 1rem;
+}
+
+.ai-saathi-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Image Side */
+.ai-image-wrapper {
+  flex: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.ai-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Content Side */
+.ai-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.ai-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.ai-subtitle {
+  font-size: 1.05rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.ai-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ai-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  margin-top: -2px;
+}
+
+.btn-meet-ai {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.2s ease;
+}
+
+.btn-meet-ai:hover {
+  background-color: #059669;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .ai-saathi-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .ai-image-wrapper {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .ai-title {
+    font-size: 2.25rem;
+  }
+}
